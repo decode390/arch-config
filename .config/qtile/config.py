@@ -151,8 +151,9 @@ screens = [
                 widget.Prompt(),
                 widget.Spacer(),
                 widget.GroupBox(
-                    highlight_method="text",
-                    padding=10
+                    highlight_method="block",
+                    padding=10,
+                    this_current_screen_border='#312c4b',
                 ),
                 widget.Spacer(),
                 #widget.Prompt(),
