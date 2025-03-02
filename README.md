@@ -99,3 +99,7 @@ static const int failonclear = 1;
 `ln -s ~/config/.zshrc ~/.zshrc`
 
 `sudo ln -s ~/config/suspend@.service /etc/systemd/system/suspend@.service`
+
+`sudo ln -s ~/config/gdrive-decode380.service /etc/systemd/system/gdrive-decode380.service`
+
+`sudo cp ~/config/logid.cfg /etc/logid.cfg`
