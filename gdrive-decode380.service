@@ -1,0 +1,13 @@
+[Unit]
+Description=rclone mount drive-decode380
+After=mult-user.target
+
+[Service]
+Type=simple
+User=decode380
+Group=decode380
+ExecStart=/usr/bin/rclone mount --config "/home/decode380/.config/rclone/rclone.conf" drive-decode380: /home/decode380/drive-decode380
+ExecStop=/usr/bin/fusermount -u /home/decode380/drive-decode380
+
+[Install]
+WantedBy=default.target
